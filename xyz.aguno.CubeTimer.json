@@ -32,6 +32,10 @@
                     "type" : "git",
                     "url" : "https://github.com/herpiko/cubetimer.git",
                     "commit" : "31b86d45e0d81c92a9f3be38b086614c1c7c2d5f"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix-appdata.patch"
                 }
             ]
         }

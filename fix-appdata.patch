@@ -1,0 +1,42 @@
+From 11e93edaebeef3a7a3c32720b4badbc1ca7fe2e2 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 10 Nov 2024 21:16:55 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+- Add missing developer name
+- Add missing launchable tag
+- Add the Game category
+---
+ data/xyz.aguno.CubeTimer.appdata.xml.in | 4 ++++
+ data/xyz.aguno.CubeTimer.desktop.in     | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/data/xyz.aguno.CubeTimer.appdata.xml.in b/data/xyz.aguno.CubeTimer.appdata.xml.in
+index 1817c45..44ae817 100644
+--- a/data/xyz.aguno.CubeTimer.appdata.xml.in
++++ b/data/xyz.aguno.CubeTimer.appdata.xml.in
+@@ -16,6 +16,10 @@
+ 	  </p>
+ 	</description>
+ 	<url type="homepage">https://github.com/herpiko/cubetimer</url>
++	<url type="bugtracker">https://github.com/herpiko/cubetimer/issues</url>
++	<url type="vcs-browser">https://github.com/herpiko/cubetimer</url>
++	<developer_name>Herpiko Dwi Aguno</developer_name>
++	<launchable type="desktop-id">xyz.aguno.CubeTimer.desktop</launchable>
+ 	<content_rating type="oars-1.1" />
+  	<screenshots>
+       	  <screenshot type="default">
+diff --git a/data/xyz.aguno.CubeTimer.desktop.in b/data/xyz.aguno.CubeTimer.desktop.in
+index 41dfdc4..a6db7e4 100644
+--- a/data/xyz.aguno.CubeTimer.desktop.in
++++ b/data/xyz.aguno.CubeTimer.desktop.in
+@@ -4,5 +4,5 @@ Exec=cubetimer
+ Icon=xyz.aguno.CubeTimer
+ Terminal=false
+ Type=Application
+-Categories=GTK;
++Categories=GTK;Game;
+ StartupNotify=true
+--
+libgit2 1.7.2
+
